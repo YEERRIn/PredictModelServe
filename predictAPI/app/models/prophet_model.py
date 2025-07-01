@@ -5,11 +5,11 @@ np.float_ = np.float64
 
 
 def load_get_on_model():
-    MODEL_PATH = "model\model.pkl"
+    MODEL_PATH = "app\models\model.pkl"
     return joblib.load(MODEL_PATH)
 
 def load_get_off_model():
-    MODEL_PATH = "model\model (1).pkl"
+    MODEL_PATH = "app\models\model (1).pkl"
     return joblib.load(MODEL_PATH)
 
 
