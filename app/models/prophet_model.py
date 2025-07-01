@@ -3,10 +3,15 @@ import joblib
 import numpy as np
 np.float_ = np.float64
 
-MODEL_PATH = "C:/Users/ryeon/Downloads/model.pkl"
 
-def load_model():
+def load_get_on_model():
+    MODEL_PATH = "model.pkl"
     return joblib.load(MODEL_PATH)
+
+def load_get_off_model():
+    MODEL_PATH = "model (1).pkl"
+    return joblib.load(MODEL_PATH)
+
 
 def make_prediction(model, data):
     input_data = pd.DataFrame([data.dict()])
