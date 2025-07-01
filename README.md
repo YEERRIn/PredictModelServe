@@ -1,12 +1,20 @@
 # PredictModelServe
-Prophet model serving 
+1. 라이브러리 설치 후 이동
+```python
+pip install -r requirements.txt
+cd predictAPI
+```
 
-시작
+<br>
+
+2. fastAPI 서버 on
+```python
 uvicorn run:app --reload
+```
+<br>
 
-결과 예시(콘솔로그) <br>
-예측 결과: [{"ds":"2025-07-01T14:15:05","yhat":732.585095245704,"yhat_lower":485.5762127830055,"yhat_upper":977.9168126105307}]
-
-yhat:예측값
-yhat_lower: 하한값
-yhat_upper: 상한값
+3. 유니티 스크립트 실행
+```python
+/get_on_predict → 승차 인원 예측 
+/get_off_predict → 하차 인원 예측
+```
